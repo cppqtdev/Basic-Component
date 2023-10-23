@@ -13,3 +13,6 @@ Starting Qt QML Basic Component project
 
 ##  QML Combobox 
 ![Custom Combobox ](https://github.com/cppqtdev/Basic-Component/blob/main/screenshot/dropdown.png)
+
+## QML Switch 
+![Switch ](https://github.com/cppqtdev/Basic-Component/blob/main/screenshot/switch.png)
