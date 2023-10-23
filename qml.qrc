@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>fonts/Font Awesome 5 Brands-Regular-400.otf</file>
+        <file>fonts/Font Awesome 5 Free-Regular-400.otf</file>
+        <file>fonts/Font Awesome 5 Free-Solid-900.otf</file>
+        <file>fonts/Font Awesome 5 Pro-Light-300.otf</file>
+        <file>fonts/Font Awesome 5 Pro-Regular-400.otf</file>
+        <file>fonts/Font Awesome 5 Pro-Solid-900.otf</file>
+        <file>fonts/Nunito-Bold.ttf</file>
+        <file>fonts/Nunito-Light.ttf</file>
+        <file>fonts/Nunito-Medium.ttf</file>
+        <file>fonts/Nunito-Regular.ttf</file>
+        <file>Images/add.svg</file>
+        <file>Images/airdrop.svg</file>
+        <file>Images/airplane.svg</file>
+        <file>Images/archive-add.svg</file>
+        <file>Images/arrow-down.svg</file>
+        <file>Images/arrow-up.svg</file>
+        <file>Images/arrow.svg</file>
+        <file>Images/eye-off.svg</file>
+        <file>Images/eye-on.svg</file>
+        <file>Images/moon.svg</file>
+        <file>Images/sun.svg</file>
+        <file>Images/tick.svg</file>
+        <file>AppStyle.qml</file>
+    </qresource>
+</RCC>
