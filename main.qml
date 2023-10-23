@@ -95,71 +95,129 @@ Window {
     //        }
     //    }
 
-    ColumnLayout{
-        anchors.centerIn: parent
+
+    RowLayout{
         spacing: 100
-        RowLayout{
-            width: parent.width
+        anchors.centerIn: parent
+
+        ColumnLayout{
+            visible: true
             spacing: 100
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                text: qsTr("Success")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    setIcon: "qrc:/Images/add.svg"
+                }
+                CustomButton{
+                    setIcon: "qrc:/Images/arrow.svg"
+                    backgroundColor:"#3B71CA"
+                }
             }
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor:"#3B71CA"
-                text: qsTr("Primary")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    setIcon: "qrc:/Images/sun.svg"
+                    backgroundColor: "#9FA6B2"
+                }
+                CustomButton{
+                    setIcon: "qrc:/Images/moon.svg"
+                    backgroundColor:"#DC4C64"
+                }
+            }
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    setIcon: "qrc:/Images/eye-off.svg"
+                    backgroundColor: "#E4A11B"
+                }
+                CustomButton{
+                    setIcon: "qrc:/Images/airdrop.svg"
+                    backgroundColor:"#54B4D3"
+                }
+            }
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    setIcon: "qrc:/Images/airplane.svg"
+                    backgroundColor: "#FBFBFB"
+                    textColor: "#000000"
+                }
+                CustomButton{
+                    setIcon: "qrc:/Images/eye-on.svg"
+                    backgroundColor:"#332D2D"
+                }
             }
         }
-        RowLayout{
-            width: parent.width
+
+        ColumnLayout{
             spacing: 100
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor: "#9FA6B2"
-                text: qsTr("Secondary")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    text: qsTr("Success")
+                }
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor:"#3B71CA"
+                    text: qsTr("Primary")
+                }
             }
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor:"#DC4C64"
-                text: qsTr("Danger")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor: "#9FA6B2"
+                    text: qsTr("Secondary")
+                }
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor:"#DC4C64"
+                    text: qsTr("Danger")
+                }
             }
-        }
-        RowLayout{
-            width: parent.width
-            spacing: 100
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor: "#E4A11B"
-                text: qsTr("Warning")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor: "#E4A11B"
+                    text: qsTr("Warning")
+                }
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor:"#54B4D3"
+                    text: qsTr("Info")
+                }
             }
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor:"#54B4D3"
-                text: qsTr("Info")
-            }
-        }
-        RowLayout{
-            width: parent.width
-            spacing: 100
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor: "#FBFBFB"
-                textColor: "#000000"
-                text: qsTr("Light")
-            }
-            CustomButton{
-                implicitHeight: 50
-                implicitWidth: 150
-                backgroundColor:"#332D2D"
-                text: qsTr("Dark")
+            RowLayout{
+                width: parent.width
+                spacing: 100
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor: "#FBFBFB"
+                    textColor: "#000000"
+                    text: qsTr("Light")
+                }
+                CustomButton{
+                    implicitHeight: 50
+                    implicitWidth: 150
+                    backgroundColor:"#332D2D"
+                    text: qsTr("Dark")
+                }
             }
         }
     }

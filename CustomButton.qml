@@ -37,7 +37,8 @@ Button {
         }
 
         Image{
-            sourceSize: Qt.size(control.implicitWidth,control.implicitHeight)
+            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+            sourceSize: Qt.size(control.implicitWidth* 0.6,control.implicitHeight*0.6)
             source: setIcon
         }
     }
