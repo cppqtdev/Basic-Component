@@ -226,28 +226,88 @@ Window {
 
     //Custom Combobox
 
+//    ColumnLayout{
+//        spacing: 400
+//        anchors.centerIn: parent
+//        RowLayout{
+//            spacing: 100
+//            CustomDropDown{
+//                model:["one 1","two 2","three 3","four 4"]
+//            }
+
+//            CustomDropDown{
+//                model:["one","two","three","four"]
+//            }
+//        }
+
+//        RowLayout{
+//            spacing: 100
+//            CustomDropDown{
+//                model:["Aksh","Qt Developer","C++ Style","four 4"]
+//            }
+
+//            CustomDropDown{
+//                model:["Drop Down","Something","Remove","four"]
+//            }
+//        }
+//    }
+
+
     ColumnLayout{
-        spacing: 400
+        spacing: 100
         anchors.centerIn: parent
+
         RowLayout{
             spacing: 100
-            CustomDropDown{
-                model:["one 1","two 2","three 3","four 4"]
+            CustomSwitch{
+                text: qsTr("Switch")
+                checked: true
             }
-
-            CustomDropDown{
-                model:["one","two","three","four"]
+            CustomSwitch{
+                text: qsTr("Switch")
+                checked: false
+            }
+            CustomSwitch{
+                text: qsTr("Switch")
+                checked: true
             }
         }
 
         RowLayout{
             spacing: 100
-            CustomDropDown{
-                model:["Aksh","Qt Developer","C++ Style","four 4"]
+            CustomSwitch{
+                text: qsTr("Switch")
+                backgroundColor: "#3B71CA"
+                checked: true
             }
+            CustomSwitch{
+                backgroundColor:"#E4A11B"
+                text: qsTr("Switch")
+                checked: false
+            }
+            CustomSwitch{
+                backgroundColor:"#14A44D"
+                text: qsTr("Switch")
+                checked: true
+            }
+        }
 
-            CustomDropDown{
-                model:["Drop Down","Something","Remove","four"]
+        RowLayout{
+            spacing: 100
+            CustomSwitch{
+                text: qsTr("Switch")
+                backgroundColor: "#E4A11B"
+                checked: true
+            }
+            CustomSwitch{
+                backgroundColor:"#332D2D"
+                text: qsTr("Switch")
+                checked: false
+            }
+            CustomSwitch{
+                backgroundColor:"#DC4C64"
+                text: qsTr("Switch")
+                checked: true
             }
         }
     }

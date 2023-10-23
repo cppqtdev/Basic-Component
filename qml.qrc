@@ -29,5 +29,6 @@
         <file>CustomButton.qml</file>
         <file>CustomDropDown.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>CustomSwitch.qml</file>
     </qresource>
 </RCC>
