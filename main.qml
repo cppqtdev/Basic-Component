@@ -3,7 +3,7 @@ import QtQuick.Window 2.15
 import AppStyle 1.0
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.3
-
+import QtQuick.Controls.Fusion 2.3
 Window {
     width: 950
     height: 680
@@ -96,128 +96,158 @@ Window {
     //    }
 
 
-    RowLayout{
-        spacing: 100
-        anchors.centerIn: parent
+    //    RowLayout{
+    //        spacing: 100
+    //        anchors.centerIn: parent
 
-        ColumnLayout{
-            visible: true
+    //        ColumnLayout{
+    //            visible: true
+    //            spacing: 100
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/add.svg"
+    //                }
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/arrow.svg"
+    //                    backgroundColor:"#3B71CA"
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/sun.svg"
+    //                    backgroundColor: "#9FA6B2"
+    //                }
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/moon.svg"
+    //                    backgroundColor:"#DC4C64"
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/eye-off.svg"
+    //                    backgroundColor: "#E4A11B"
+    //                }
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/airdrop.svg"
+    //                    backgroundColor:"#54B4D3"
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/airplane.svg"
+    //                    backgroundColor: "#FBFBFB"
+    //                    textColor: "#000000"
+    //                }
+    //                CustomButton{
+    //                    setIcon: "qrc:/Images/eye-on.svg"
+    //                    backgroundColor:"#332D2D"
+    //                }
+    //            }
+    //        }
+
+    //        ColumnLayout{
+    //            spacing: 100
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    text: qsTr("Success")
+    //                }
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor:"#3B71CA"
+    //                    text: qsTr("Primary")
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor: "#9FA6B2"
+    //                    text: qsTr("Secondary")
+    //                }
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor:"#DC4C64"
+    //                    text: qsTr("Danger")
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor: "#E4A11B"
+    //                    text: qsTr("Warning")
+    //                }
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor:"#54B4D3"
+    //                    text: qsTr("Info")
+    //                }
+    //            }
+    //            RowLayout{
+    //                width: parent.width
+    //                spacing: 100
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor: "#FBFBFB"
+    //                    textColor: "#000000"
+    //                    text: qsTr("Light")
+    //                }
+    //                CustomButton{
+    //                    implicitHeight: 50
+    //                    implicitWidth: 150
+    //                    backgroundColor:"#332D2D"
+    //                    text: qsTr("Dark")
+    //                }
+    //            }
+    //        }
+    //    }
+
+
+
+    //Custom Combobox
+
+    ColumnLayout{
+        spacing: 400
+        anchors.centerIn: parent
+        RowLayout{
             spacing: 100
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    setIcon: "qrc:/Images/add.svg"
-                }
-                CustomButton{
-                    setIcon: "qrc:/Images/arrow.svg"
-                    backgroundColor:"#3B71CA"
-                }
+            CustomDropDown{
+                model:["one 1","two 2","three 3","four 4"]
             }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    setIcon: "qrc:/Images/sun.svg"
-                    backgroundColor: "#9FA6B2"
-                }
-                CustomButton{
-                    setIcon: "qrc:/Images/moon.svg"
-                    backgroundColor:"#DC4C64"
-                }
-            }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    setIcon: "qrc:/Images/eye-off.svg"
-                    backgroundColor: "#E4A11B"
-                }
-                CustomButton{
-                    setIcon: "qrc:/Images/airdrop.svg"
-                    backgroundColor:"#54B4D3"
-                }
-            }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    setIcon: "qrc:/Images/airplane.svg"
-                    backgroundColor: "#FBFBFB"
-                    textColor: "#000000"
-                }
-                CustomButton{
-                    setIcon: "qrc:/Images/eye-on.svg"
-                    backgroundColor:"#332D2D"
-                }
+
+            CustomDropDown{
+                model:["one","two","three","four"]
             }
         }
 
-        ColumnLayout{
+        RowLayout{
             spacing: 100
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    text: qsTr("Success")
-                }
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor:"#3B71CA"
-                    text: qsTr("Primary")
-                }
+            CustomDropDown{
+                model:["Aksh","Qt Developer","C++ Style","four 4"]
             }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor: "#9FA6B2"
-                    text: qsTr("Secondary")
-                }
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor:"#DC4C64"
-                    text: qsTr("Danger")
-                }
-            }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor: "#E4A11B"
-                    text: qsTr("Warning")
-                }
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor:"#54B4D3"
-                    text: qsTr("Info")
-                }
-            }
-            RowLayout{
-                width: parent.width
-                spacing: 100
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor: "#FBFBFB"
-                    textColor: "#000000"
-                    text: qsTr("Light")
-                }
-                CustomButton{
-                    implicitHeight: 50
-                    implicitWidth: 150
-                    backgroundColor:"#332D2D"
-                    text: qsTr("Dark")
-                }
+
+            CustomDropDown{
+                model:["Drop Down","Something","Remove","four"]
             }
         }
     }

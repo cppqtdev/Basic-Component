@@ -27,5 +27,7 @@
         <file>FontStyle.qml</file>
         <file>CustomTextField.qml</file>
         <file>CustomButton.qml</file>
+        <file>CustomDropDown.qml</file>
+        <file>qtquickcontrols2.conf</file>
     </qresource>
 </RCC>
