@@ -8,7 +8,7 @@ QtObject {
     readonly property color popupBackground: "#333742"
     readonly property color appStyle: "#1d5ffe"
     readonly property color labelColor: "#85889b"
-    readonly property color textColor: "#ffffff"
+    readonly property color textColor: "#FFFFFF"
     readonly property color borderColor: "#464a53"
     readonly property color placeholderColor: "#757985"
 }

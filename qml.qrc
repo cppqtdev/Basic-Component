@@ -24,5 +24,7 @@
         <file>Images/sun.svg</file>
         <file>Images/tick.svg</file>
         <file>AppStyle.qml</file>
+        <file>FontStyle.qml</file>
+        <file>CustomTextField.qml</file>
     </qresource>
 </RCC>

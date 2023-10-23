@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     qmlRegisterSingletonType(QStringLiteral("qrc:/AppStyle.qml"),"AppStyle",1,0,"AppStyle");
-    qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/FontSystem.qml")),"AppStyle",1,0,"FontStyle");
+    qmlRegisterSingletonType(QUrl(QStringLiteral("qrc:/FontStyle.qml")),"AppStyle",1,0,"FontStyle");
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
