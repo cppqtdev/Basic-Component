@@ -9,4 +9,4 @@ Starting Qt QML Basic Component project
 
 ## QML icon Button 
 
-![Custom QML Button](https://github.com/cppqtdev/Basic-Component/blob/main/screenshot/iconButtons.png)
+![Custom QML Button](https://github.com/cppqtdev/Basic-Component/blob/main/screenshot/iconButton.png)
