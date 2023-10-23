@@ -12,85 +12,154 @@ Window {
     color: AppStyle.background
 
 
+    //    ColumnLayout{
+    //        spacing: 50
+    //        anchors.centerIn: parent
+    //        RowLayout{
+    //            spacing: 50
+    //            width: parent.width
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:true
+    //                placeholderText: qsTr("Primary")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "green"
+    //                radius: 8
+    //                borderColor : "#3B71CA"
+    //            }
+
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:true
+    //                placeholderText: qsTr("Error")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "blue"
+    //                radius: 12
+    //                borderColor : "#FF0000"
+    //            }
+    //        }
+    //        RowLayout{
+    //            spacing: 50
+    //            width: parent.width
+
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:false
+    //                placeholderText: qsTr("Danger")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "blue"
+    //                radius: 18
+    //                borderColor : "#DC4C64"
+    //            }
+
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:false
+    //                placeholderText: qsTr("Success")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "blue"
+    //                radius: 18
+    //                borderColor : "#14A44D"
+    //            }
+    //        }
+
+    //        RowLayout{
+    //            spacing: 50
+    //            width: parent.width
+
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:false
+    //                placeholderText: qsTr("Info")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "blue"
+    //                radius: 18
+    //                borderColor : "#54B4D3"
+    //            }
+
+    //            CustomTextField{
+    //                implicitWidth: 300
+    //                implicitHeight: 55
+    //                isBold:false
+    //                placeholderText: qsTr("Warning")
+    //                selectedTextColor: "#FFFFFF"
+    //                selectionColor: "blue"
+    //                radius: 18
+    //                borderColor : "#E4A11B"
+    //            }
+    //        }
+    //    }
+
     ColumnLayout{
-        spacing: 50
         anchors.centerIn: parent
+        spacing: 100
         RowLayout{
-            spacing: 50
             width: parent.width
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:true
-                placeholderText: qsTr("Primary")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "green"
-                radius: 8
-                borderColor : "#3B71CA"
+            spacing: 100
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                text: qsTr("Success")
             }
-
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:true
-                placeholderText: qsTr("Error")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "blue"
-                radius: 12
-                borderColor : "#FF0000"
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor:"#3B71CA"
+                text: qsTr("Primary")
             }
         }
         RowLayout{
-            spacing: 50
             width: parent.width
-
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:false
-                placeholderText: qsTr("Danger")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "blue"
-                radius: 18
-                borderColor : "#DC4C64"
+            spacing: 100
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor: "#9FA6B2"
+                text: qsTr("Secondary")
             }
-
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:false
-                placeholderText: qsTr("Success")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "blue"
-                radius: 18
-                borderColor : "#14A44D"
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor:"#DC4C64"
+                text: qsTr("Danger")
             }
         }
-
         RowLayout{
-            spacing: 50
             width: parent.width
-
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:false
-                placeholderText: qsTr("Info")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "blue"
-                radius: 18
-                borderColor : "#54B4D3"
+            spacing: 100
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor: "#E4A11B"
+                text: qsTr("Warning")
             }
-
-            CustomTextField{
-                implicitWidth: 300
-                implicitHeight: 55
-                isBold:false
-                placeholderText: qsTr("Warning")
-                selectedTextColor: "#FFFFFF"
-                selectionColor: "blue"
-                radius: 18
-                borderColor : "#E4A11B"
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor:"#54B4D3"
+                text: qsTr("Info")
+            }
+        }
+        RowLayout{
+            width: parent.width
+            spacing: 100
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor: "#FBFBFB"
+                textColor: "#000000"
+                text: qsTr("Light")
+            }
+            CustomButton{
+                implicitHeight: 50
+                implicitWidth: 150
+                backgroundColor:"#332D2D"
+                text: qsTr("Dark")
             }
         }
     }

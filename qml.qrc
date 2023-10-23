@@ -26,5 +26,6 @@
         <file>AppStyle.qml</file>
         <file>FontStyle.qml</file>
         <file>CustomTextField.qml</file>
+        <file>CustomButton.qml</file>
     </qresource>
 </RCC>
